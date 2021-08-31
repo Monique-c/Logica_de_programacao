@@ -1,0 +1,64 @@
+#n1 = int(input("Digite um número: "))
+#n2 = int(input("Digite mais um número: "))
+#print ("A soma dos dois é",n1+n2)      
+
+
+n1 = float(input("Digite o tamanho em metros: "))
+print (f"Isso equivale a {n1*1000} milímetros")
+
+
+#n1 = int(input("Digite a quantidade de dias: "))
+#n2 = int(input("Digite a quantidade de horas: "))
+#n3 = int(input("Digite a quantidade de minutos: "))
+#n4 = int(input("Digite a quantidade de segundos: "))
+#convertido = n1*86400 + n2*3600 + n3*60 + n4
+#print("Isso equivale a ", convertido, "segundos")
+
+                                                                                                                                                                                                                                                                                                             
+n1 = float(input("Digite o seu salário: "))
+n2 = float(input("Digite a porcentagem que receberá de aumento: "))
+n3 = n1*n2/100
+n4 = n1+n3
+print(f"O valor do aumento será R$ {n3:.2f}")
+print(f"O valor do novo salário será R$ {n4:.2f}")
+
+
+n1 = float(input("Digite o valor do produto: "))
+n2 = float(input("Digite a porcentagem que de desconto: "))
+n3 = n1*n2/100
+n4 = n1-n3
+print(f"O valor do desconto é: R${n3:.2f}")
+print(f"O valor final do produto é: R${n4:.2f}")
+
+
+n1 = int(input("Escreva a distância a ser percorrida, em Km: "))
+n2 = int(input("Qual a velocidade média do veículo? "))
+n3 = n1/n2
+print(f"O tempo gasto na viagem será de {n3:.2f} horas")
+
+
+n1 = float(input("Qual a temperatura em Celsius? "))
+n2 = 9*n1/5 + 32
+print(f"A temperatura em Farenheit é {n2:.2f} graus")
+
+
+n1 = float(input("Quantos cigarros você fuma por dia?: "))
+n2 = float(input("Você fuma há quantos anos?: " ))
+n3 = n1*n2*365/144
+print(f"Você já perdeu {n3:.2f} dias de vida")
+
+
+print(len(str(2**1000000)))
+n1 = float(input("Digite a temperatura em Farenheit: "))
+n2 = (n1-32)/1.8
+print(f"A temperatura em Celsius é {n2:.2f} graus")
+
+
+n1 = int(input("O carro foi alugado por quantos dias? "))
+n2 = int(input("Foram percorridos quantos quilômetros? "))
+n3 = (n1*60 + n2*0.15)
+print (f"O valor total a ser pago será R$ {n3:.2f}")
+
+
+print(len(str(2**1000000)))
+

@@ -1,0 +1,76 @@
+# 1
+a = int(input("Digite o lado a: "))
+b = int(input("Digite o lado b: "))
+c = int(input("Digite o lado c: "))
+if a>b+c  or b>c+a or c>b+a:
+ if a == b == c:
+  print("Este triângulo é equilátero")
+ elif a == b or a ==c or b == c:
+  print("Este triângulo é isósceles")
+ elif a != b != c:
+  print("Este triângulo é escaleno")
+else:
+ print("Essas retas não formam um triângulo")
+# 2
+ano = int(input("Digite o ano: "))
+if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+ print("Esse ano é bissexto")
+else:
+ print("Esse ano não é bissexto")
+# 3
+peso = float(input("Digite o peso dos peixes: "))
+if peso > 50:
+ excedente = peso - 50            
+ multa = excedente*4
+else:
+ excedente = multa = 0
+print(f"O excedente é de {excedente:.2f} kg")
+print(f"A multa é de R$ {multa:.2f}")
+# 4
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+n3 = int(input("Digite o terceiro número: "))
+if n1>n2 and n1>n3:
+ print("o maior é", n1)
+if n2>n1 and n2>n3:
+ print("o maior é", n2)
+if n3>n2 and n3>n1:
+ print("o maior é", n3)
+# 5
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+n3 = int(input("Digite o terceiro número: "))
+if n1>n2 and n1>n3:
+ print("o maior é", n1)
+if n2>n1 and n2>n3:
+ print("o maior é", n2)
+if n3>n2 and n3>n1:
+ print("o maior é", n3)
+if n1<n2 and n1<n3:
+ print("o menor é", n1)
+if n2<n1 and n2<n3:
+ print("o menor é", n2)
+if n3<n2 and n3<n1:
+ print("o menor é", n3)
+# 6
+valor = float(input("Digite quanto você ganha por hora: "))
+horas = int(input("Digite quantas horas você trabalha por mês: "))
+s_bruto = valor*horas
+ir = s_bruto*11/100
+inss = s_bruto*8/100
+sindicato  = s_bruto*5/100
+s_liquido = s_bruto -ir-inss-sindicato
+print(f"O salário bruto é R$ {s_bruto:.2f}")
+print(f"O desconto do IR é R$ {ir:.2f}")
+print(f"O desconto do INSS é R$ {inss:.2f}")
+print(f"O desconto do sindicato é R$ {sindicato:.2f}")
+print(f"O salário líquido é R$ {s_liquido:.2f}")
+# 7 
+metros = int(input("Digite a metragem que será pintada: "))
+if metros % 54 == 0:
+ print(f"Você precisará de {metros/54:.0f} latas, e o valor será R$",metros/54*80)
+else:
+ print("Você precisará de",(int(metros/54)+1),"latas e o valor será R$",(int(metros/54)+1)*80)
+
+
+
